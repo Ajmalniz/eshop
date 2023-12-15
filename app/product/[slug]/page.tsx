@@ -74,8 +74,8 @@ export default async function ProductPge({
               <span className="text-sm">2-4 Day Shipping</span>
              </div>
              <div className="flex gap-2.5">
-                <AddToCart currency="Rupees" description={data.description} image={data.image[0]} name={data.name} price={data.price} key={data._id} price_id={""}/>
-                <Button>Checkout Now</Button>
+                <AddToCart currency="Rupees" description={data.description} image={data.image[0]} name={data.name} price={data.price} key={data._id} price_id={data.price_id}/>
+                <Button variant={"secondary"}>Checkout Now</Button>
              </div>
              <p className="mt-12 text-base text-gray-500 tracking-wide">
               {data.description}

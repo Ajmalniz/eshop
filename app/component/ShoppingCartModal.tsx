@@ -17,6 +17,18 @@ export default function ShoppingCartModal(){
         removeItem,
         totalPrice,
         redirectToCheckout,}=useShoppingCart()
+
+        async function handleCheckoutClick(event: any) {
+          event.preventDefault();
+          try {
+            const result = await redirectToCheckout();
+            if (result?.error) {
+              console.log("result");
+            }
+          } catch (error) {
+            console.log(error);
+          }
+        }
     
     return(
         <Sheet open={shouldDisplayCart} onOpenChange={() => handleCartClick()} >
@@ -85,7 +97,7 @@ export default function ShoppingCartModal(){
             </p>
 
             <div className="mt-6">
-              <Button  className="w-full">
+              <Button onClick={handleCheckoutClick}  className="w-full">
                 Checkout
               </Button>
             </div>
