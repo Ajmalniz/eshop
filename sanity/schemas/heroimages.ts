@@ -9,7 +9,7 @@ export default{
      title:'first Image',
         },
         {
-            name:'imahe2',
+            name:'image2',
             type:'image',
             title:'Second Image',
         },

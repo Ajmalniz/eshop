@@ -17,7 +17,7 @@ async function getData() {
 
   return data;
 }
-
+export const dynamic = "force-dynamic";
 
 
 

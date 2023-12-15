@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 async function getData(){
-    const query=`*[_type=='product'][0...4] | order(_createdAt desc) {
+    const query=`*[_type=='product'][0...4] | order(_createdAt asc) {
         _id,
           price,
           name,
@@ -16,6 +16,7 @@ async function getData(){
 const data = await client.fetch(query);
 return data;
     }
+    export const dynamic = "force-dynamic";
 export default async function Newest(){
 const data:simplifiedProduct[] = await getData();
 return(

@@ -17,11 +17,13 @@ export default function CheckoutNow({currency,description,image,name,price,price
     price_id:price_id, 
   };
     return(
-        <Button onClick={() => {
+        <Button 
+        variant="outline"
+        onClick={() => {
         buyNow(price_id);
       }}
 >
-            Add To Cart
+            Checkout Now
         </Button>
     )
 } 

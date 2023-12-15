@@ -19,7 +19,7 @@ async function getData() {
 }
 
 
-
+export const dynamic = "force-dynamic";
 
 export default async function Women () {
     const data: simplifiedProduct[] = await getData();
