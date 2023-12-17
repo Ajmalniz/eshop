@@ -14,9 +14,9 @@ export default function Navbar() {
                         Next<span className="text-primary">Commerce</span></h1></Link>
                 <nav className="hidden gap-12 lg:flex 2xl:ml-16">
                     <Link href="/">Home</Link>{/*folders name changed */}
-                    <Link href="/men">Men</Link>
-                    <Link href="/women">Women</Link>
-                    <Link href="/teen">Teen</Link>
+                    <Link href="/Men">Men</Link>
+                    <Link href="/Women">Women</Link>
+                    <Link href="/Teen">Teen</Link>
                 </nav>
                 <div className="flex divide-x border-r sm:border-l">
                     <Button variant={"outline"}
